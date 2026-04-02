@@ -37,13 +37,13 @@ var renderEntries = () => {
     return;
   }
   if (activePhase === "phase-1" /* PHASE_1 */) {
-    toggleSection(winnersSection, false);
-    toggleSection(featuredEntriesSection, false);
-    toggleSection(allEntriesSection, false);
+    toggleSection(winnersSection, true);
+    toggleSection(featuredEntriesSection, true);
+    toggleSection(allEntriesSection, true);
     return;
   }
   if (activePhase === "phase-2" /* PHASE_2 */) {
-    toggleSection(winnersSection, false);
+    toggleSection(winnersSection, true);
     toggleSection(featuredEntriesSection, true);
     toggleSection(allEntriesSection, true);
     return;
@@ -56,7 +56,7 @@ var renderEntries = () => {
   }
   if (activePhase === "phase-4" /* PHASE_4 */) {
     toggleSection(winnersSection, true);
-    toggleSection(featuredEntriesSection, true);
+    toggleSection(featuredEntriesSection, false);
     toggleSection(allEntriesSection, true);
     return;
   }
@@ -84,4 +84,4 @@ var initSectionRenderer = () => {
 export {
   initSectionRenderer
 };
-//# sourceMappingURL=section-renderer-B5FJ5TPQ.js.map
+//# sourceMappingURL=section-renderer-IIFXDWJP.js.map
